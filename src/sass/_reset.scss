@@ -1,0 +1,44 @@
+:root {
+    --primary-text-color: #FFFFFF;
+    --second-text-color: #131313;
+    --title-text-color: #FCFCFC;
+    --background-color: #84A178;
+    --accent-color: #F8D24E;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+  }
+  
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
