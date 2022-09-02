@@ -1,10 +1,30 @@
 .advantages {
     background-color: var(--background-color);
-    padding-bottom: 60px;
+    padding: 20px 20px 60px 20px;
+
+    @include tab {
+        padding: 20px 34px 60px 34px;
+    }
+}
+
+.advantages__cont {
+    @include tab {
+        width: 768px;
+    }
 }
 
 .title_advantages {
     display: none;
+}
+
+.advantages-list {
+    @include tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 22px;
+    }
+
 }
 
 .advantages-list__item {
@@ -20,7 +40,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--primary-text-color);
+    color: var(--primary-text-color); 
 }
 
 .advantages-list__text {
