@@ -8,13 +8,6 @@
   font-weight: 600;
 
   width: 150px;
-
-  background-color: #f8d24e;
-
-  &:hover,
-  &:focus {
-    background-color: #0a8817;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -50,6 +43,8 @@
   border-width: 2px;
   border-color: #f8d24e;
   border-style: solid;
+
+  background-color: inherit;
 
   transition: border-color var(--transition-duration-and-funk);
 
