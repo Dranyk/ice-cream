@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 65px;
-    background-image: url(../images/products/Frame.jpg);
+    background-image: url(../images/products/Frame-mob.jpg);
     background-size: contain;
 }
 .products__label {
@@ -45,10 +45,20 @@
     padding-top: 125px;
     padding-bottom: 20px;
     width: 280px;
-    border-radius: 24px;   
+    border-radius: 24px;
+    transition: box-shadow var(--transition-duration-and-funk);  
+    
+    &:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 .ice-cream {
     background: #AEC6A5;
+    transition: background-color var(--transition-duration-and-funk);
+
+    &:hover {
+        background: #a2b99a;
+    }
 }
 .circle-ice-cream {
     position: absolute;
@@ -76,6 +86,11 @@
 }
 .ice-coffe {
     background-color: #EFD478;
+    transition: background-color var(--transition-duration-and-funk);
+
+    &:hover {
+        background: #e2c771;
+    }
 }
 .circle-ice-coffe {
     position: absolute;
@@ -103,6 +118,11 @@
 } 
 .milkshakes {
     background-color: #D6936D;
+    transition: background-color var(--transition-duration-and-funk);
+
+    &:hover {
+        background: #c88a66;
+    }
 }
 .circle-milkshakes {
     position: absolute;
@@ -125,7 +145,7 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-image: url(../images/products/victor-rutka-mob.jpg), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+        background-image: url(../images/products/victor-rutka-mob.jpg);
     }
 }
 .products__desc {   
@@ -148,12 +168,83 @@
 }
 .products__button-ice-cream {
     background-color: #AEC6A5;
-}
+   }
 .products__button-ice-coffe {
     background-color: #EFD478;
 }
 .products__button-milkshakes {
     background-color: #D6936D;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .products {
+            background-image: url(../images/products/Frame-mob@2x.jpg); 
+        } 
+        .circle-ice-cream::before {
+            background-image: url(../images/products/kelsey-mob@2x.jpg); 
+        } 
+        .circle-ice-coffe::before {
+            background-image: url(../images/products/pariwat-mob@2x.jpg); 
+        }  
+        .circle-milkshakes::before {
+            background-image: url(../images/products/victor-rutka-mob@2x.jpg); 
+        }
+}
+@media screen and (min-width: 768px) {
+    .products {
+        background-image: url(../images/products/Frame-tablet.jpg); 
+    } 
+    .products__menu {
+        flex-direction: row;           
+        gap: 16px;
+    }
+    .products__thumb {
+        padding-top: 125px;
+        padding-bottom: 20px;
+        width: 224px;
+        border-radius: 24px;
+        transition: box-shadow var(--transition-duration-and-funk);  
+        
+        &:hover {
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+    .circle-ice-cream::before {
+        background-image: url(../images/products/kelsey-tablet.jpg); 
+    }
+    .circle-ice-coffe::before {
+        background-image: url(../images/products/pariwat-tablet.jpg); 
+    }  
+    .circle-milkshakes::before {
+        background-image: url(../images/products/victor-rutka-tablet.jpg); 
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .products {
+            background-image: url(../images/products/Frame-tablet@2x.jpg); 
+        }
+        .circle-ice-cream::before {
+            background-image: url(../images/products/kelsey-tablet@2x.jpg); 
+        }
+        .circle-ice-coffe::before {
+            background-image: url(../images/products/pariwat-tablet@2x.jpg); 
+        }  
+        .circle-milkshakes::before {
+            background-image: url(../images/products/victor-rutka-tablet@2x.jpg); 
+        }
+}
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//         .products {
+//             background-image: url(../images/products/Frame-tablet@2x.jpg); 
+//         }
+//         .circle-ice-cream::before {
+//             background-image: url(../images/products/kelsey-mob@2x.jpg); 
+//         } 
+//     }
 
 
