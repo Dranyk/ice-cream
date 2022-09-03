@@ -1,0 +1,159 @@
+.products {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    background-image: url(../images/products/Frame.jpg);
+    background-size: contain;
+}
+.products__label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.products__title {
+    margin-bottom: 140px;
+    font-family: var(--seconadary-font);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.products__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+.products__item {
+    position: relative;
+}
+.products__suptitle {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.products__thumb {
+    padding-top: 125px;
+    padding-bottom: 20px;
+    width: 280px;
+    border-radius: 24px;   
+}
+.ice-cream {
+    background: #AEC6A5;
+}
+.circle-ice-cream {
+    position: absolute;
+    top: -110px;
+    left: 40px;
+    display: block;
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:-12px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url(../images/products/kelsey-mob.jpg);
+    }
+}
+.ice-coffe {
+    background-color: #EFD478;
+}
+.circle-ice-coffe {
+    position: absolute;
+    top: -110px;
+    left: 40px;
+    display: block;
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:-12px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url(../images/products/pariwat-mob.jpg);
+    }
+} 
+.milkshakes {
+    background-color: #D6936D;
+}
+.circle-milkshakes {
+    position: absolute;
+    top: -110px;
+    left: 40px;
+    display: block;
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:-12px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url(../images/products/victor-rutka-mob.jpg), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+}
+.products__desc {   
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 90px;
+    font-size: 14px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em; 
+}
+.products__button {
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: 15px;
+    background-image: url(../images/Arrow_black_icon.svg);
+    border: none;
+}
+.products__button-ice-cream {
+    background-color: #AEC6A5;
+}
+.products__button-ice-coffe {
+    background-color: #EFD478;
+}
+.products__button-milkshakes {
+    background-color: #D6936D;
+}
+
+
