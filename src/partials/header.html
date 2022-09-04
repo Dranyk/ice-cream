@@ -1,7 +1,20 @@
 <header class="header">
 <div class="header-container container">
         <a class="header-logo link" href="./index.html">
-            <img src="./images/logo.png" alt="ice-cream"><span class="header-logo__text">ce</span></a>
+            <picture>
+                <source srcset="./images/header/logo-desk@1x.png 1x,
+                                ./images/header/logo-desk@2x.png 2x" media="(min-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="./images/header/logo-tab@1x.png 1x,
+                                ./images/header/logo-tab@2x.png 2x" media="(min-width: 768px)">
+            </picture>
+            <picture>
+                <source srcset="./images/header/logo-mobile@1x.png 1x,
+                                ./images/header/logo-mobile@2x.png 2x" media="(min-width: 480px)">
+            </picture>
+            <img src="./images/header/logo-desk@1x.png" alt="ice-cream">
+        </a>
 <div class="navigation">
     <ul class="navigation-list list">
         <li class="navigation-list__item">
@@ -21,15 +34,30 @@
             </li>
     </ul>
 </div>
-        <button class="header-button__buy" type="button">Buy now</button>
         <button class="header-button__burger" type="button">
-            <svg class="menu-open__icon" width="20" height="12"><use href="./images/icons.svg#icon-Burger"></use></svg>
+            <svg class="menu-open__icon" width="20" height="12" ><use href="./images/icons.svg#icon-Burger"></use></svg>
+        </button>
+        <button class="header-button__buy" type="button">Buy now
+            <svg class="header-btn-icon" width="4.05" height="8.47"><use href="./images/icons.svg#icon-btn_icon_black"></use></svg>
+
         </button>
 </div>
 <div class="mob-menu">
 <div class="mob-menu__container">
             <a class="header-logo link" href="./index.html">
-                <img src="./images/logo.png" alt="ice-cream"><span class="header-logo__text">ce</span>
+                <picture>
+                    <source srcset="./images/header/logo-desk@1x.png 1x,
+                                    ./images/header/logo-desk@2x.png 2x" media="(min-width: 1200px)">
+                </picture>
+                <picture>
+                    <source srcset="./images/header/logo-tab@1x.png 1x,
+                                    ./images/header/logo-tab@2x.png 2x" media="(min-width: 768px)">
+                </picture>
+                <picture>
+                    <source srcset="./images/header/logo-mobile@1x.png 1x,
+                                    ./images/header/logo-mobile@2x.png 2x" media="(min-width: 480px)">
+                </picture>
+                <img src="./images/header/logo-desk@1x.png" alt="ice-cream">
             </a>
             <button class="menu-close" type="button">
                 <svg width="20" height="20"><use href="./images/icons.svg#icon-Close_icon"></use></svg>
