@@ -1,14 +1,8 @@
-.text-btn {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-}
-
 .hero {
     position: relative;
 
     max-width: 480px;
-    height: 502px;
+    min-height: 502px;
     margin: 0 auto;
     background-color: #84A178;
     background-image: url(../images/hero/hero-mob/points-mob.png);
@@ -28,6 +22,9 @@
     text-transform: uppercase;
 }
 
+.hero__title-text {
+    font-size: 35px;
+}
 
 .hero__ice-cream-img {
     position: absolute;
@@ -37,7 +34,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .hero__text-wrapper, .hero__text {
+    .hero__numb-list, .hero__text, .hero__arrow-btn {
         display: none;
     }
 
@@ -70,10 +67,10 @@
 @media screen and (min-width: 768px) {
     .hero {
         max-width: 768px;
-        height: 415px;
+        min-height: 415px;
         background-image: url(../images/hero/hero-tab/blur-tab.png),
             url(../images/hero/hero-tab/points-tab.png);
-        background-position: 95% 100%, 50% 100%;
+        background-position: 98% 100%, 50% 100%;
     }
 
     .hero__ice-cream-img {
@@ -86,36 +83,73 @@
 
     }
 
-    .hero__text-wrapper {
+    .hero__title-text {
+        font-size: 24px;
+    }
+
+    .hero__numb-list {
         position: absolute;
         top: 94px;
-        right: 32px;
+        right: 20px;
 
         font-size: 8px;
         line-height: 1.25;
-        color: #ffffff
+        color: #ffffff;
     }
 
-    .hero__numb {
+    .hero__numb-text {
         font-weight: 900;
         font-size: 28px;
         line-height: 1.2;
         letter-spacing: 0.04em;
+        color:#000000;
     }
 
-    .hero__numb-of-us {
+    .hero__numb-item {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         row-gap: 4px;
     }
 
-    .hero__numb-of-us:not(:last-child) {
+    .hero__numb-item:not(:last-child) {
         margin-bottom: 20px;
     }
 
+    .hero__serving-img {
+        margin-bottom: 13px;
+        margin-top: 28px;
+        margin-right: 33px;
+    }
 
-    
+    .hero__pic-text-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__text {
+        width: 150px;
+        color: #ffffff;
+    }
+
+    .hero__arrow-btn {
+        position: absolute;
+        left: 205px;
+        bottom: 32px;
+
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        width: 40px;
+        height: 15px;
+    }
+
+    .hero__text {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
