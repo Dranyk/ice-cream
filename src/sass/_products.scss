@@ -43,10 +43,10 @@
 }
 .products__thumb {
     padding-top: 125px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     width: 280px;
     height: 420px;
-    border-radius: 24px;
+    border-radius: 24px;    
     transition: box-shadow var(--transition-duration-and-funk);  
     
     &:hover {
@@ -78,9 +78,9 @@
     background: #AEC6A5;
     transition: background-color var(--transition-duration-and-funk);
 
-    &:hover {
-        background: #a2b99a;
-    }
+    // &:hover {
+    //     background: #a2b99a;
+    // }
 }
 .circle-ice-cream {   
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
@@ -96,9 +96,9 @@
     background-color: #EFD478;
     transition: background-color var(--transition-duration-and-funk);
 
-    &:hover {
-        background: #e2c771;
-    }
+    // &:hover {
+    //     background: #e2c771;
+    // }
 }
 .circle-ice-coffe {
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
@@ -114,9 +114,9 @@
     background-color: #D6936D;
     transition: background-color var(--transition-duration-and-funk);
 
-    &:hover {
-        background: #c88a66;
-    }
+    // &:hover {
+    //     background: #c88a66;
+    // }
 }
 .circle-milkshakes {
     background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
@@ -140,17 +140,29 @@
     display: block;  
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;    
     width: 40px;
-    height: 15px;
+    height: 20px;
     background-image: url(../images/Arrow_black_icon.svg);
+    background-repeat: no-repeat;
+    transition: var(--transition-duration-and-funk);
     border: none;
+
+    &:hover {
+        width: 50px;
+        height: 25px;
+        background-image: url(../images/Arrow_hover.svg);        
+    }
+    &:focus {
+        width: 50px;
+        height: 24px;
+        background-image: url(../images/Arrow_focus.svg);
+    }
 }
 .products__button-ice-cream {
     margin-top: 100px;
-    background-color: #AEC6A5;
-   }
+    background-color: #AEC6A5;     
+}
 .products__button-ice-coffe {
     margin-top: 50px;
     background-color: #EFD478;
@@ -222,13 +234,13 @@
         font-size: 22px;
     }
     .products__button-ice-cream {
-        margin-top: 110px;        
+        margin-top: 105px;        
        }
     .products__button-ice-coffe {
-        margin-top: 50px;       
+        margin-top: 45px;       
     }
     .products__button-milkshakes {
-        margin-top: 85px;       
+        margin-top: 80px;       
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -301,13 +313,13 @@
         margin-bottom: 65px;
     }
     .products__button-ice-cream {
-        margin-top: 110px;        
+        margin-top: 100px;        
        }
     .products__button-ice-coffe {
-        margin-top: 85px;       
+        margin-top: 75px;       
     }
     .products__button-milkshakes {
-        margin-top: 85px;       
+        margin-top: 75px;       
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
