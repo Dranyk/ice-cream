@@ -24,8 +24,6 @@
     background-repeat: no-repeat;
     background-position: bottom;
 }
-    right: 48px;
-    left: 62px;
 
 .hero {
     max-width: 480px;
@@ -46,6 +44,8 @@
 .ice-cream-img {
     position: absolute;
     bottom: 0;
+    right: 48px;
+    left: 62px;
     left: 50%;
     transform: translateX(-49%);
 }
