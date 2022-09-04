@@ -4,6 +4,7 @@
     max-width: 480px;
     min-height: 502px;
     margin: 0 auto;
+    padding-top: 110px;
     background-color: #84A178;
     background-image: url(../images/hero/hero-mob/blur-mob.png),
         url(../images/hero/hero-mob/points-mob.png);
@@ -22,7 +23,6 @@
 }
    
 .hero__title {
-    padding-top: 110px;
     margin-bottom: 32px;
 
     font-family: var(--secondary-font);
@@ -56,12 +56,12 @@
 
 .hero__products {
     display: inline-block;
-    padding: 7px 14px;
+    padding: 7px 11px;
     margin-right: 16px;
     border: solid 2px #F8D24E;
     border-radius: 8px;
 
-    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     font-size: 8px;
     line-height: 1.13;
     color: #000000;
@@ -77,6 +77,7 @@
 
 @media screen and (min-width: 768px) {
     .hero {
+        padding-top: 104px;
         max-width: 768px;
         min-height: 415px;
         background-image: url(../images/hero/hero-tab/blur-tab.png),
@@ -101,7 +102,7 @@
     .hero__numb-list {
         position: absolute;
         top: 94px;
-        right: 20px;
+        right: 32px;
 
         font-size: 8px;
         line-height: 1.25;
@@ -145,7 +146,7 @@
 
     .hero__arrow-btn {
         position: absolute;
-        left: 205px;
+        left: 217px;
         bottom: 32px;
 
         padding: 0;
@@ -172,3 +173,110 @@
         background-size: 400px, 767px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 118px;
+        max-width: 1200px;
+        min-height: 664px;
+        background-image: url(../images/hero/hero-desk/blur-desk.png),
+            url(../images/hero/hero-desk/points-desk.png);
+    }
+
+    .hero__title {
+        font-size: 38px;
+        line-height: 1.26;
+    }
+
+    .hero__title-text {
+        font-size: 38px;
+    }
+
+    .hero__numb-list {
+        top: 126px;
+        right: 16px;
+
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .hero__numb-text {
+        font-size: 46px;
+    }
+
+    .hero__numb-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .hero__serving-img {
+        margin-bottom: 65px;
+        margin-top: 42px;
+        margin-right: 14px;
+    }
+
+    .hero__text {
+        width: 200px;
+        font-size: 14;
+        line-height: 1.36;
+    }
+
+    .hero__arrow-btn {
+        left: 256px;
+        bottom: 111px;
+    }
+
+    .hero__products {
+        padding: 12px 34px;
+        margin-right: 34px;
+    
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    
+    .hero__recipe {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) and (min-width: 1200px),
+(min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: url(../images/hero/hero-desk/blur-desk@2x.png),
+            url(../images/hero/hero-desk/points-desk@2x.png);
+        background-size: 700px, 1200px;
+    }
+}
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+//     .hero__text {
+//         margin-bottom: 20px;
+//         font-size: 12px;
+//         line-height: 1.4;
+//     }
+// }
