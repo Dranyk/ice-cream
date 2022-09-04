@@ -22,9 +22,18 @@
         </p>
         <button class="text-btn">
             <use>
-                <svg href="../images/icons.svg#icon-Arrow-_white_icon" class="arrow-icon" width="40" height="15"></svg>
+                <svg href="#" class="arrow-icon" width="40" height="15"></svg>
             </use>
         </button>
-        <img src=".././src/images/hero/hero-mob/ice-cream-mob.png" alt="Ice cream" class="ice-cream-img" width="170">
+        <picture>
+            <source media="(max-width: 768px)" srcset=".././src/images/hero/hero-mob/ice-cream-mob.png,
+            .././src/images/hero/hero-mob/ice-cream-mob@2x.png 2x">
+
+            <img src=".././src/images/hero/hero-mob/ice-cream-mob.png" alt="Ice cream" class="hero__ice-cream-img" width="157">
+        </picture>
+
+        <picture>
+            <img src="#" alt="Serving a ice cream" class="hero__serving-img">
+        </picture>
     </div>
 </section>
