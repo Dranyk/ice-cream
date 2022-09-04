@@ -107,10 +107,13 @@
         .container {
                 height: 100%;
                 width: 100%;
+                max-width: 320px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
             }
+
+
     
 }
 
@@ -136,6 +139,8 @@
     margin-top: 100px;
 }
 
+
+
 .mob-menu__item:not(:last-child){
     margin-bottom: 32px;
 }
@@ -147,6 +152,11 @@
     font-size: 32px;
     line-height: 1.22;
     color: #FCFCFC;
+
+    @include tab {
+            font-size: 48px;
+            line-height: 1.23;
+    }
 }
 
 .menu-button{
