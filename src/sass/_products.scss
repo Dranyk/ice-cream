@@ -193,6 +193,7 @@
 }
 @media screen and (min-width: 768px) {
     .products {
+        width: 100%;
         background-image: url(../images/products/Frame-tablet.jpg); 
     } 
     .products__menu {
@@ -200,8 +201,8 @@
         gap: 16px;
     }
     .products__thumb {
-        padding-top: 125px;
-        padding-bottom: 20px;
+        padding-top: 107px;
+        // padding-bottom: 20px;
         width: 224px;
         border-radius: 24px;
         transition: box-shadow var(--transition-duration-and-funk);  
@@ -210,14 +211,28 @@
             box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
     }
+    .circle-ice-cream {
+        left: 14px;
+    }
     .circle-ice-cream::before {
         background-image: url(../images/products/kelsey-tablet.jpg); 
     }
+    .circle-ice-coffe {
+        left: 14px;
+    }
     .circle-ice-coffe::before {
         background-image: url(../images/products/pariwat-tablet.jpg); 
-    }  
+    } 
+    .circle-milkshakes {
+        left: 14px;
+    } 
     .circle-milkshakes::before {
         background-image: url(../images/products/victor-rutka-tablet.jpg); 
+    }
+    .products__desc {   
+        margin-left: 26px;
+        margin-right: 26px;
+        margin-bottom: 60px;
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
