@@ -34,7 +34,7 @@
             </li>
     </ul>
 </div>
-        <button class="header-button__burger" type="button">
+        <button class="header-button__burger" type="button" data-menu-open-header>
             <svg class="menu-open__icon" width="20" height="12" ><use href="./images/icons.svg#icon-Burger"></use></svg>
         </button>
         <button class="header-button__buy" type="button">Buy now
@@ -42,8 +42,8 @@
 
         </button>
 </div>
-<div class="mob-menu">
-<div class="mob-menu__container">
+<div class="mob-menu is-hidden"  data-menu-header>
+<div class="container">
             <a class="header-logo link" href="./index.html">
                 <picture>
                     <source srcset="./images/header/logo-desk@1x.png 1x,
@@ -59,11 +59,13 @@
                 </picture>
                 <img src="./images/header/logo-desk@1x.png" alt="ice-cream">
             </a>
-            <button class="menu-close" type="button">
+            <button class="menu-close" type="button" data-menu-close-header>
                 <svg width="20" height="20"><use href="./images/icons.svg#icon-Close_icon"></use></svg>
             </button>
+            
+            <div class="mob-menu-content">
     <ul class="mob-menu__list list">
-        <li class="mob-menu__list__item">
+        <li class="mob-menu__item">
                 <a href="" class="mob-menu__link link">Home</a>
             </li>
         <li class="mob-menu__item">
@@ -79,7 +81,14 @@
                 <a href="" class="mob-menu__link link">Contact</a>
             </li>
     </ul>
-</div>
+    <button class="header-button__buy menu-button" type="button">Buy now
+        <svg class="header-btn-icon" width="4.05" height="8.47">
+            <use href="./images/icons.svg#icon-btn_icon_black"></use>
+        </svg>
+    
+    </button>
+    </div>
+
     </div>
 </header>
 
