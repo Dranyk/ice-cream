@@ -81,7 +81,7 @@
                 <a href="" class="mob-menu__link link">Contact</a>
             </li>
     </ul>
-    <button class="header-button__buy menu-button" type="button">Buy now
+    <button class="header-button__buy menu-button" type="button" >Buy now
         <svg class="header-btn-icon" width="6" height="10">
             <use href="./images/icons.svg#btn_icon"></use>
         </svg>
@@ -95,35 +95,42 @@
 
 <div class="backdrop-header "> 
 <div class="header-modal" data-modal-header>
-    <div class="container">
+    <div>
         <h2 class="header-modal__title">Buy now</h2>
+        <button type="button" class="modal-close-button" data-modal-close-header>
+            <svg>
+                <use href="/src/images/icons.svg#close_icon"></use>
+            </svg>
+        </button>
         <ul class="header-modal-menu__list">
             <li class="header-modal-menu__item">
-                <div class="header-modal-menu__choise">
+                <div class="header-modal-menu__ice_cream">
+                <div class="header-mmodal-menu__circle"></div>
+                    <h2 class="header-modal-menu__text">ice cream</h2>
+                </div>
+                   
+                    
+                
+            </li>
+            <!-- <li class="header-modal-menu__item">
+                <div class="header-modal-menu__ice_coffee">
                     <div class="header-mmodal-menu__circle"></div>
-                    <p class="header-modal-menu__text"></p>
+<p class="header-modal-menu__text"></p>
                 </div>
             </li>
             <li class="header-modal-menu__item">
-                <div class="header-modal-menu__choise">
-                    <div class="header-mmodal-menu__circle"></div>
-
-                    <p class="header-modal-menu__text"></p>
-                </div>
-            </li>
-            <li class="header-modal-menu__item">
-                <div class="header-modal-menu__choise">
+                <div class="header-modal-menu__milkshake">
                     <div class="header-mmodal-menu__circle"></div>
                     <p class="header-modal-menu__text"></p>
 
                 </div>
-            </li>
+            </li> -->
         </ul>
         <form action="">
 
             <label for=""><input class="modal-input__name" type="text" placeholder=""></label>
             <label for=""><input class="modal-input__phone" type="text" placeholder=""></label>
-            <label for=""><textarea class="modal-input__comment" name="" id="" cols="30" rows="10"
+            <label for=""><textarea class="modal-input__comment" name="" id="" 
                     placeholder=""></textarea></label>
             <button class="modal-submit" type="button"></button>
         </form>
