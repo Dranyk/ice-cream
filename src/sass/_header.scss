@@ -13,11 +13,12 @@
     justify-content: space-between;
     padding-top: 12px;
     background-color: transparent;
-    width: 100%;
+   
 
     @media screen and (max-width:479px) {
         width: 100%;
     }
+
     
 }
 
@@ -103,6 +104,7 @@
 }
 
 .mob-menu {
+    transition: transform 1000ms;
     position: fixed;
         z-index: 999;
         top: 0;
@@ -116,12 +118,22 @@
         overflow: auto;
         background-color: #85A279;
         text-align: center;
+        visibility: visible;
+        opacity: 1;
+        transition: all 500ms;
+        
         .container {
                 height: 100%;
                 width: 100%;
             }
     
 }
+.mob-menu.is-hidden {
+    left: -100%; 
+    transition: all 500ms;
+}
+
+
 
 
 .menu-close{
