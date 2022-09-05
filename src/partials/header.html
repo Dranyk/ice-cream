@@ -93,9 +93,9 @@
 </header>
 
 
-<div class="backdrop-header is-hidden"> 
+<div class="backdrop-header is-hidden> 
 <div class="header-modal" data-modal-header>
-    <div>
+    
         <h2 class="header-modal__title">Buy now</h2>
         <button type="button" class="modal-close-button" data-modal-close-header>
             <svg>
@@ -105,36 +105,66 @@
         <ul class="header-modal-menu__list">
             <li class="header-modal-menu__item">
                 <div class="header-modal-menu__ice_cream">
-                <div class="header-mmodal-menu__circle"></div>
+                <div class="header-mmodal-menu__circle">
+                    <picture>
+                        <source srcset="./images/header/header-ice_creamtab@1x.png 1x,
+                                        ./images/header/header-ice_creamtab@2x.png 2x" media="min-width:768px">
+                    </picture>
+                    <picture>
+                        <source srcset="./images/header/header-ice_creammob@1x.png 1x,
+                                         ./images/header/header-ice_creammob@2x.png 2x" media="min-width:480px">
+                    </picture>
+                    <img class="modal-img" src="./images/header/header-ice_creamtab@1x.png" alt="ice-cream">
+                </div>
                     <h2 class="header-modal-menu__text">ice cream</h2>
                 </div>
                    
                     
                 
             </li>
-            <!-- <li class="header-modal-menu__item">
+            <li class="header-modal-menu__item">
                 <div class="header-modal-menu__ice_coffee">
-                    <div class="header-mmodal-menu__circle"></div>
+                    <div class="header-mmodal-menu__circle">
+                        <picture>
+                            <source srcset="./images/header/header-ice_cofeetab@1x.png 1x,
+                                            ./images/header/header-ice_cofeetab@2x.png 2x" media="min-width:768px">
+                        </picture>
+                        <picture>
+                            <source srcset="./images/header/header-ice_cofeemob@1x.png 1x,
+                                            ./images/header/header-ice_cofeemob@2x.png 2x" media="min-width:480px">
+                        </picture>
+                        <img class="modal-img" src="./images/header/header-ice_cofeetab@1x.png" alt="ice-cream">
+                    </div>
 <p class="header-modal-menu__text"></p>
                 </div>
             </li>
             <li class="header-modal-menu__item">
                 <div class="header-modal-menu__milkshake">
-                    <div class="header-mmodal-menu__circle"></div>
+                    <div class="header-mmodal-menu__circle">
+                        <picture>
+                            <source srcset="./images/header/header-ice_cofeetab@1x.png 1x,
+                                            ./images/header/header-ice_cofeetab@2x.png 2x" media="min-width:768px">
+                        </picture>
+                        <picture>
+                            <source srcset="./images/header/header-ice_cofeemob@1x.png 1x,
+                                            ./images/header/header-ice_cofeemob@1x.png 2x" media="min-width:480px">
+                        </picture>
+                        <img class="modal-img" src="./images/header/header-ice_cofeemob@1x.png" alt="ice-cream">
+                    </div>
                     <p class="header-modal-menu__text"></p>
 
                 </div>
-            </li> -->
+            </li>
         </ul>
-        <form action="">
+        <form action="" class="modal-form">
 
             <label for=""><input class="modal-input__name" type="text" placeholder=""></label>
             <label for=""><input class="modal-input__phone" type="text" placeholder=""></label>
             <label for=""><textarea class="modal-input__comment" name="" id="" 
                     placeholder=""></textarea></label>
-            <button class="modal-submit" type="button"></button>
+            <button class="modal-submit" type="button">Submit</button>
         </form>
-    </div>
+    
 </div>
 
 </div>
