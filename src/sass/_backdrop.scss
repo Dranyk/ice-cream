@@ -28,6 +28,12 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+  @include tab {
+    min-width: 568px;
+    min-height: 468px;
+
+    padding: 32px 60px;
+  }
   // .backdrop.is-hidden > & {
   //   animation-name: none;
   // }
@@ -58,17 +64,8 @@
   & :hover {
     fill: var(--accent-color);
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-width: 568px;
-    min-height: 468px;
-
-    padding: 32px 60px;
-  }
-
-  .modal-close-button {
+  @include desk{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -78,7 +75,8 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+
+@media screen and (max-width: 767px) {
   .modal {
     width: calc(100% - 40px);
     max-width: 440px;
