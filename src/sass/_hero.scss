@@ -1,33 +1,30 @@
 .hero__container {
-    padding-top: 110px;
     position: relative;
 
     @media screen and (max-width: 767px) {
-        min-height: 502px;
-    }
-
-    background-image: url(../images/hero/hero-mob/blur-mob.png),
-     url(../images/hero/hero-mob/points-mob.png);
-    background-repeat: no-repeat;
-    background-position: 55% 100%,
-    50% 100%;
+        min-height: 392px;
+    } 
 }
 
 .hero {
+    padding-top: 110px;
     width: 100%;
     min-height: 502px;
     margin: 0 auto;
     
     background-color: #84A178;
+
+    background-image: url(../images/hero/hero-mob/points-mob.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) and (max-width: 767px),
 (min-resolution: 2dppx) and (max-width: 767px) {
-    .hero__container {
-        background-image: url(../images/hero/hero-mob/blur-mob@2x.png),
-            url(../images/hero/hero-mob/points-mob@2x.png);
-        background-size: 280px, 329px;
+    .hero {
+        background-image: url(../images/hero/hero-mob/points-mob@2x.png);
+        background-size: 329px;
     }
 }
    
@@ -50,7 +47,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-47%);
 }
 
 @media screen and (max-width: 767px) {
@@ -91,8 +88,6 @@
     &:disabled {
         border-color: #ABABAB;
     }
-
-
 }
 
 .hero__recipe {
@@ -118,15 +113,15 @@
 
 @media screen and (min-width: 768px) {
     .hero__container {
-        padding-top: 104px;
-        min-height: 415px;
-        background-image: url(../images/hero/hero-tab/blur-tab.png),
-            url(../images/hero/hero-tab/points-tab.png);
-        background-position: 98% 100%, 50% 100%;
+        min-height: 311px;
     }
 
     .hero {
+        padding-top: 104px;
         min-height: 415px;
+
+        background-image: url(../images/hero/hero-tab/points-tab.png);
+        background-position: 50% 100%;
     }
 
     .hero__ice-cream-img {
@@ -145,7 +140,7 @@
 
     .hero__numb-list {
         position: absolute;
-        top: 94px;
+        top: -10px;
         right: 32px;
 
         font-size: 8px;
@@ -211,24 +206,22 @@
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) and (min-width: 768px),
 (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero__container {
-        background-image: url(../images/hero/hero-tab/blur-tab@2x.png),
-            url(../images/hero/hero-tab/points-tab@2x.png);
-        background-size: 400px, 767px;
+    .hero {
+        background-image: url(../images/hero/hero-tab/points-tab@2x.png);
+        background-size: 767px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hero__container {
-        padding-top: 118px;
-        min-height: 664px;
-        
-        background-image: url(../images/hero/hero-desk/blur-desk.png),
-            url(../images/hero/hero-desk/points-desk.png);
+        min-height: 546px;
     }
 
     .hero {
+        padding-top: 118px;
         min-height: 664px;
+
+        background-image: url(../images/hero/hero-desk/points-desk.png);
         
     }
 
@@ -242,7 +235,7 @@
     }
 
     .hero__numb-list {
-        top: 126px;
+        top: 8px;
         right: 16px;
 
         font-size: 14px;
@@ -291,10 +284,9 @@
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) and (min-width: 1200px),
 (min-resolution: 2dppx) and (min-width: 1200px) {
-    .hero__container {
-        background-image: url(../images/hero/hero-desk/blur-desk@2x.png),
-            url(../images/hero/hero-desk/points-desk@2x.png);
-        background-size: 700px, 1200px;
+    .hero {
+        background-image: url(../images/hero/hero-desk/points-desk@2x.png);
+        background-size: 1200px;
     }
 }
 
