@@ -43,14 +43,14 @@
 }
 .products__thumb {
     padding-top: 125px;
-    // padding-bottom: 20px;
     width: 280px;
     height: 420px;
     border-radius: 24px;    
-    transition: box-shadow var(--transition-duration-and-funk);  
+    transition: box-shadow transform var(--transition-duration-and-funk);  
     
     &:hover {
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transform: scale(1.01);
     }
 }
 .products__circle {
@@ -76,11 +76,7 @@
 }
 .ice-cream {
     background: #AEC6A5;
-    transition: background-color var(--transition-duration-and-funk);
-
-    // &:hover {
-    //     background: #a2b99a;
-    // }
+    transition: background-color var(--transition-duration-and-funk);   
 }
 .circle-ice-cream {   
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
@@ -94,11 +90,7 @@
 }
 .ice-coffe {
     background-color: #EFD478;
-    transition: background-color var(--transition-duration-and-funk);
-
-    // &:hover {
-    //     background: #e2c771;
-    // }
+    transition: background-color var(--transition-duration-and-funk);    
 }
 .circle-ice-coffe {
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
@@ -113,10 +105,6 @@
 .milkshakes {
     background-color: #D6936D;
     transition: background-color var(--transition-duration-and-funk);
-
-    // &:hover {
-    //     background: #c88a66;
-    // }
 }
 .circle-milkshakes {
     background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
