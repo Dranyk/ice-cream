@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 767px) {
   .section.contacts {
-    height: calc(100% - 345px);
+    height: calc(1444px - 345px);
   }
 
   .container.contacts {
@@ -213,6 +213,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .section.contacts {
+    height: calc(655px - 304px);
+  }
+
   .container.contacts {
     top: -304px;
   }
@@ -303,6 +307,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .section.contacts {
+    height: calc(662.16px - 96px);
+  }
+
   .container.contacts {
     top: -96px;
   }

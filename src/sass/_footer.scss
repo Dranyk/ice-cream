@@ -1,15 +1,12 @@
 .footer {
-  padding-top: 32px;
   padding-bottom: 62px;
   background-color: var(--background-color);
 
   @include tab {
-    padding-top: 40px;
     padding-bottom: 13px;
   }
 
   @include desk {
-    padding-top: 120px;
     padding-bottom: 11px;
   }
 }
