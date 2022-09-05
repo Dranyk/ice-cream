@@ -81,7 +81,7 @@
                 <a href="" class="mob-menu__link link">Contact</a>
             </li>
     </ul>
-    <button class="menu-button" type="button" data-modal-open-header>Buy now
+    <button class="menu-button" type="button"  >Buy now
         <svg class="header-btn-icon" width="6" height="10">
             <use href="./images/icons.svg#btn_icon"></use>
         </svg>
@@ -93,7 +93,7 @@
 </header>
 
 
-<div class="backdrop-header is-hidden" data-modal-header> 
+<div class="backdrop-header" data-modal-header> 
 <div class="header-modal" >
     
         <h2 class="header-modal__title">Buy now</h2>
@@ -105,16 +105,7 @@
         <ul class="header-modal-menu__list">
             <li class="header-modal-menu__item">
                 <div class="header-modal-menu__ice_cream">
-                <div class="header-mmodal-menu__circle">
-                    <picture>
-                        <source srcset="./images/header/header-ice_creamtab@1x.png 1x,
-                                        ./images/header/header-ice_creamtab@2x.png 2x" media="min-width:768px">
-                    </picture>
-                    <picture>
-                        <source srcset="./images/header/header-ice_creammob@1x.png 1x,
-                                         ./images/header/header-ice_creammob@2x.png 2x" media="min-width:480px">
-                    </picture>
-                    <img class="modal-img" src="./images/header/header-ice_creamtab@1x.png" alt="ice-cream">
+                <div class="header-modal-menu__circle__One">
                 </div>
                     <h2 class="header-modal-menu__text">ice cream</h2>
                 </div>
@@ -124,46 +115,29 @@
             </li>
             <li class="header-modal-menu__item">
                 <div class="header-modal-menu__ice_coffee">
-                    <div class="header-mmodal-menu__circle">
-                        <picture>
-                            <source srcset="./images/header/header-ice_cofeetab@1x.png 1x,
-                                            ./images/header/header-ice_cofeetab@2x.png 2x" media="min-width:768px">
-                        </picture>
-                        <picture>
-                            <source srcset="./images/header/header-ice_cofeemob@1x.png 1x,
-                                            ./images/header/header-ice_cofeemob@2x.png 2x" media="min-width:480px">
-                        </picture>
-                        <img class="modal-img" src="./images/header/header-ice_cofeetab@1x.png" alt="ice-cream">
+                    <div class="header-modal-menu__circle__two">
                     </div>
-<p class="header-modal-menu__text"></p>
+                <h2 class="header-modal-menu__text">ice coffee</h2>
                 </div>
             </li>
             <li class="header-modal-menu__item">
                 <div class="header-modal-menu__milkshake">
-                    <div class="header-mmodal-menu__circle">
-                        <picture>
-                            <source srcset="./images/header/header-ice_cofeetab@1x.png 1x,
-                                            ./images/header/header-ice_cofeetab@2x.png 2x" media="min-width:768px">
-                        </picture>
-                        <picture>
-                            <source srcset="./images/header/header-ice_cofeemob@1x.png 1x,
-                                            ./images/header/header-ice_cofeemob@1x.png 2x" media="min-width:480px">
-                        </picture>
-                        <img class="modal-img" src="./images/header/header-ice_cofeemob@1x.png" alt="ice-cream">
+                    <div class="header-modal-menu__circle__three">
                     </div>
-                    <p class="header-modal-menu__text"></p>
+                    <h2 class="header-modal-menu__text">milkshake</h2>
 
                 </div>
             </li>
         </ul>
         <form action="" class="modal-form">
 
-            <label for=""><input class="modal-input__name" type="text" placeholder=""></label>
-            <label for=""><input class="modal-input__phone" type="text" placeholder=""></label>
-            <label for=""><textarea class="modal-input__comment" name="" id="" 
-                    placeholder=""></textarea></label>
-            <button class="modal-submit" type="button">Submit</button>
+            <label class="header-modal__label"><input class="modal-input modal-input__name " type="name" placeholder="Name"></label>
+            <label class="header-modal__label"><input class="modal-input modal-input__phone" type="tel" placeholder="Phone"></label>
+            <label class="header-modal__label"><textarea class="modal-input modal-input__comment" name="Comment" 
+                    placeholder="Comment"></textarea></label>
+            
         </form>
+        <button class="modal-submit" type="button">Submit</button>
     
 </div>
 
