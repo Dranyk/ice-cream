@@ -320,8 +320,10 @@
 }
 .products-modal {
     max-width: 285px;
+    height: 100vh;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: auto;
 }
 .products-modal__circle {
     position: relative;
@@ -341,6 +343,7 @@
         height: 130.6px;
         border-radius: 50%;
         background-image: url(../images/products/pexels.jpg);
+        background-size: contain;
 
     }
 }
@@ -351,6 +354,7 @@
     line-height: 1.4;  
     text-align: center;
     margin-bottom: 28px;
+    
 }
 .products-modal__value {
     display: flex;
@@ -358,6 +362,7 @@
     justify-content: center;
     margin-top: 28px;
     margin-bottom: 39px;
+    
 }
 .products-value-ellipse {
     width: 53px;
@@ -393,19 +398,20 @@
     line-height: 1.4;
     text-align: center;
     margin-bottom: 24px;
+    
 }
 .products-ingredients {
-    margin-bottom: 37px;
+    margin-bottom: 37px;    
     font-size: 14px;
     line-height: 1.76;
 }
 .products-ingredients__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 11px;
+    margin-bottom: 11px;   
 }
 .products-modal__label {
-    margin-bottom: 16px;
+    margin-bottom: 16px;    
 }
 .products-modal__form {    
     margin-bottom: 16px;
@@ -413,7 +419,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1920px),
     screen and (min-resolution: 192dpi) and (max-width: 1920px),
     screen and (min-resolution: 2dppx) and (max-width: 1920px) {
-        .products-modal__circle {
+        .products-modal__circle::before {
             background-image: url(../images/products/pexels@2x.jpg) ;
         }
 }
