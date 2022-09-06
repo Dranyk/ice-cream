@@ -204,9 +204,8 @@
 
 .header-modal {
     position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top:0;
+        left:0;
         background: #ffffff;
         border: 2px solid #f8d24e;
         border-radius: 10px;
@@ -214,16 +213,18 @@
         padding-bottom: 28px;
     overflow: auto;
             @include tel {
-                width: 280px;
-                
-            }
-            @media screen and (max-width:767){
-                height:100vh;
+                width: 100%;
+                height: 100vh;
             }
     
             @include tab {
                 width: 568px;
                max-height: 644px;
+            }
+            @include desk {
+                top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
             }
         }
 
@@ -244,6 +245,7 @@ font-family: 'Seymour One';
         line-height: 1.4;
         margin-bottom: 103px;
     }
+
 }
 
 
@@ -264,11 +266,7 @@ font-family: 'Seymour One';
         }
 }
 
-.header-modal.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-}
+
 
 .modal-close-button{
     display: block;
@@ -333,7 +331,7 @@ margin-top: 80px;
                 height: 131px;
                 background-image: url(/src/images/header/header-ice_creammob@1x.png);
                 background-size: cover;
-                bottom: 9px;
+                bottom: 7px;
                 @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
