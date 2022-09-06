@@ -2,16 +2,12 @@
     background-color: var(--background-color);
     width: 100%;
 
-}
-
-.about__container {
     padding-top: 60px;
     padding-bottom: 20px;
 
 @include tab {
     padding-bottom: 30px;
 }
-
 
 }
 
@@ -153,7 +149,7 @@
     justify-content: center;
 
     color: #000000;
-
+    transition: background-color var(--transition-duration-and-funk);
     &:hover,
     &:focus {
         background-color: var(--accent-color);
