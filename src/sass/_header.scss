@@ -104,9 +104,8 @@
 }
 
 .mob-menu {
-    transition: transform 1000ms;
     position: fixed;
-        z-index: 999;
+        z-index:2;
         top: 0;
         left: 0;
         width: 100vw;
@@ -126,7 +125,9 @@
                 height: 100%;
                 width: 100%;
             }
-    
+    @include desk {
+        display: none;
+    }
 }
 .mob-menu.is-hidden {
     left: -100%; 
@@ -211,21 +212,20 @@
         border-radius: 10px;
         padding-top: 28px;
         padding-bottom: 28px;
-    overflow: auto;
+        overflow: auto;
             @include tel {
                 width: 100%;
                 height: 100vh;
             }
     
             @include tab {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 width: 568px;
                max-height: 644px;
             }
-            @include desk {
-                top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-            }
+            
         }
 
 
@@ -255,15 +255,19 @@ font-family: 'Seymour One';
     left:0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 999;
     padding: 28px;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 500ms linear, visibility 500ms linear;
-    &.is-hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
+
+   
+    
+}
+
+.backdrop-header.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 
