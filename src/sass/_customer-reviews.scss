@@ -14,37 +14,24 @@
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
 .main-foto-up {
     
     @media screen and(min-width:768px) {
         margin-top: -730px;
+        margin-bottom: 28px;
      
     }
     
     @media screen and(min-width:1200px) {
         margin-top: -562px;
-     
+        margin-bottom: 32px;
     }
 
     @media screen and(max-width:767px) {
         margin-top: -850px;
-      
+        margin-bottom: 32px;
     }
 }
-
-
-
-
 
 
 .wrapper {
@@ -52,24 +39,27 @@
     @media screen and(min-width:768px) {
         width: 705px;
         height: 138px;
-     
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 28px;
     }
     
     @media screen and(min-width:1200px) {
         height: 138px;
         width: 968px;
-     
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
     }
 
     @media screen and(max-width:767px) {
         width: 280px;
         height: 256px;
-      
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
     }
 }
-
-
-
 
 .features__heading-up {
     @media screen and(min-width:768px) {
@@ -80,17 +70,17 @@
         width: 545px;
         height: 81px;
         margin-top: 29px;
-    margin-bottom: 28px;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 186%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FCFCFC;
+        margin-bottom: 28px;
+        margin-left: 80px;
+        margin-right: 80px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
 
     }
     
@@ -99,17 +89,17 @@
         height: 60px;
 
         margin-top: 39px;
-    margin-bottom: 39px;
-    margin-left: 109px;
-    margin-right: 109px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FCFCFC;
+        margin-bottom: 39px;
+        margin-left: 109px;
+        margin-right: 109px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
 
     }
 
@@ -118,36 +108,20 @@
         align-items: center;
         justify-content: center;
         width: 202px;
-height: 188.05px;
-margin-top: 34px;
-margin-bottom: 34px;
-margin-left: 39px;
-margin-right: 39px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 255%;
-text-align: center;
-color: #FCFCFC;
+        height: 188.05px;
+        margin-top: 34px;
+        margin-bottom: 34px;
+        margin-left: 39px;
+        margin-right: 39px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 255%;
+        text-align: center;
+        color: #FCFCFC;
     }
 }
-
-
-
-// @media screen and(max-width:479px) {
-//     .features__heading-up{
-//         width: 100%;
-//     }
-//     .main-foto-up{
-//         width: 100%;
-//     }
-//     .slider {
-//         width: 100%;
-//     }
-// }
-
-
 
 .slide-up {
     
@@ -163,7 +137,6 @@ color: #FCFCFC;
         margin-bottom: 470px;
     }
 }
-
 
 .features__heading-down {
     
@@ -183,18 +156,6 @@ color: #FCFCFC;
     }
 }
 
-
-
-
-
-
-
-
-.slide-up {
-    // margin-top: -560px;
-    // margin-bottom: 300px;
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -205,10 +166,7 @@ color: #FCFCFC;
 }
 
 .wrapper {
-	// height: 138px;
-	margin: 32px auto 0;
 	position: relative;
-	// width: 968px;
 }
 
 .slider {
@@ -268,7 +226,6 @@ color: #FCFCFC;
 }
 
 .wrapper label {
-    // margin-top: 32px;
 	cursor: pointer;
 	display: inline-block;
 	height: 12px;
@@ -332,7 +289,7 @@ color: #FCFCFC;
     line-height: 186%;
     text-align: center;
     color: #131313;
-    // margin-top: 32px;
+ 
 }
 
 .main-foto {
@@ -340,9 +297,6 @@ color: #FCFCFC;
     justify-content: center;
 }
 
-// .main-foto-up {
-//     position: relative;
-// }
 
 
 
