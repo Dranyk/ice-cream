@@ -1,9 +1,7 @@
 .advantages {
     background-color: var(--background-color);
     width: 100%;
-}
 
-.advantages__container {
     padding-top: 20px;
     padding-bottom: 60px;
     @include tab {
@@ -34,6 +32,11 @@
     }
 }
 
+.advantages-list__item {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .advantages-list__number {
     margin-bottom: 18px;
     font-style: normal;
@@ -48,8 +51,9 @@
 
 .advantages-list__text {
     margin-bottom: 28px;
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
     text-align: center;
@@ -69,6 +73,7 @@
     background-size: 36px, 50px;
     background-repeat: no-repeat;
     background-position: center, 0;
+    margin-bottom: 40px;
     
 
 }
