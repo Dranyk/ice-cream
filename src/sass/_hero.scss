@@ -172,6 +172,13 @@
         margin-bottom: 13px;
         margin-top: 28px;
         margin-right: 33px;
+        scale: 1;
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover {
+            transform: rotate(180deg);
+            scale: 0.9;
+        }
     }
 
     .hero__pic-text-wrapper {
@@ -223,7 +230,6 @@
         min-height: 664px;
 
         background-image: url(../images/hero/hero-desk/points-desk.png);
-        
     }
 
     .hero__title {
@@ -289,36 +295,4 @@
         background-image: url(../images/hero/hero-desk/points-desk@2x.png);
         background-size: 1200px;
     }
-}
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-//     .hero__text {
-//         margin-bottom: 20px;
-//         font-size: 12px;
-//         line-height: 1.4;
-//     }
-// }
+}   
